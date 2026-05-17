@@ -1,0 +1,135 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.authorization {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 374px;
+    height: 47vh;
+    background-color: rgba(77, 104, 135, 1);
+    padding: 10px 30px 20px 30px;
+    justify-content: space-between;
+}
+
+/* Стили для страниц без каталога (корзина, личный кабинет) */
+.authorization.fullHeight {
+    height: 100vh;
+}
+
+/* Скрытие блока категорий на страницах без каталога */
+.categoryWrapper {
+    display: block;
+}
+
+.sticky:has(.authorization.fullHeight) .categoryWrapper {
+    display: none;
+}
+
+.h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.nameCompany {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: white;
+    gap: 20px;
+}
+
+.panelMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    gap: 10px;
+}
+
+.hover {
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: rgba(197, 26, 26, 1);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.enter {
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgba(197, 26, 26);
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+}
+
+.enter:hover {
+    box-shadow: 0px 0px 14px 0px rgba(197, 26, 26, 0.6);
+}
+
+.enter:active {
+    background-color: rgba(161, 18, 18, 1);
+}
+
+.logo {
+    position: absolute;
+    left: 90px;
+    bottom: -20px;
+    pointer-events: none;
+}
+
+.totalQuantity {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+    bottom: 10px;
+    left: -5px;
+}
+
+.totalQuantity span {
+    position: absolute;
+    left: 4px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(4, 13, 35, 1);
+}
+
+.basketImg2 {
+    position: absolute;
+    left: -10px;
+}
+
+@media (max-width:1200px) {
+    .sticky {
+        display: none;
+    }
+}

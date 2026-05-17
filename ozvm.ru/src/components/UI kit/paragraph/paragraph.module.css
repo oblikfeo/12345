@@ -1,0 +1,107 @@
+.paragraph {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paragraph h2 {
+  color: rgba(38, 71, 148, 1);
+  white-space: nowrap;
+}
+
+.paragraph h3 {
+  color: rgba(4, 13, 35, 1);
+  max-width: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hidden {
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  width: 100%;
+  padding: 12px 10px 0px 12px;
+}
+
+.borderItem {
+  padding-top: 6px;
+  width: 100%;
+  border-bottom: 1px dashed rgba(38, 71, 148, 0.4);
+}
+
+@media (max-width: 1350px) {
+  .paragraph h3 {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .paragraph h2 {
+    font-size: 15px;
+  }
+
+  .paragraph h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .paragraph h2 {
+    font-size: 14px;
+  }
+
+  .paragraph h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .paragraph h3 {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .paragraph h3 {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 380px) {
+  .paragraph h3 {
+    font-size: 12px;
+    max-width: 100px;
+  }
+
+  .paragraph h2 {
+    font-size: 12px;
+  }
+}
+
+.clickable {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+.clickable h3 {
+  text-decoration: underline;
+}
+
+.clickable:hover h3 {
+  color: rgba(197, 26, 26, 1);
+  text-decoration: underline;
+}
+
+.clickable span {
+  display: inline-block;
+}

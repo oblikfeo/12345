@@ -1,0 +1,234 @@
+.flexContainer {
+    display: flex;
+    width: 100%;
+    min-height: 1100px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+/* Скрытие блока категорий на странице корзины */
+.flexContainer .categoryWrapper {
+    display: none !important;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-image: url('../../../img/bcgWelcome.svg');
+    background-size: 100%;
+    background-repeat: repeat;
+    padding: 20px 60px 0 60px;
+}
+
+.footer {
+    position: absolute;
+    font-size: 14px;
+    bottom: 10px;
+}
+
+.redline {
+    border-right: 1px solid rgba(197, 26, 26, 1);
+    padding-right: 10px;
+}
+
+.footerText {
+    padding-left: 10px;
+}
+
+.modalOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    display: block;
+}
+
+.modalSuccess {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: block;
+    height: 346px;
+    width: 402px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.modalWindow {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.girl {
+    position: absolute;
+    bottom: 170px;
+    right: -50px;
+    pointer-events: none;
+}
+
+.first {
+    margin-top: 21px;
+    margin-left: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(38, 71, 148, 1);
+}
+
+.order {
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(4, 13, 35, 1);
+    width: 250px;
+}
+
+.lk {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(4, 13, 35, 1);
+    width: 158px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modalChange {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: block;
+    height: 362px;
+    width: 354px;
+    background-color: white;
+}
+
+.noYou {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.nameSvg {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.input {
+    background-color: rgba(236, 245, 255, 1);
+    border-radius: 10px;
+    width: calc(100% - 20px);
+    height: 50px;
+    padding-left: 50px;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(38, 71, 148, 0.4);
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.nameChange {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.numberChange {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.but {
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: rgba(197, 26, 26, 1);
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 60px;
+}
+
+.lkLink {
+    color: rgba(197, 26, 26, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        padding: 20px 20px 0 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        padding: 0px 8px 0 8px;
+    }
+
+    .modalSuccess {
+        width: 307px;
+        height: 260px;
+    }
+
+    .modalWindow {
+        height: 80%;
+        width: 65%;
+    }
+
+    .girl {
+        right: -154px;
+        bottom: 151px;
+    }
+}
+
+@media (max-width: 400px) {
+    .modalChange {
+        width: 330px;
+    }
+}
+
+@media (max-width: 380px) {
+    .modalChange {
+        width: 310px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modalChange {
+        width: 290px;
+    }
+}

@@ -1,0 +1,233 @@
+.authorization {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 374px;
+    height: 100vh;
+    padding: 0;
+    padding-left: 40px;
+    top: 40px;
+    z-index: 9999;
+}
+
+.h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.textContainer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.text {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.subText {
+    color: #fff;
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 13px 20px 13px 54px;
+    border: none;
+}
+
+.input:hover {
+    border: 1px solid rgba(38, 71, 148, 0.3)
+}
+
+.input:focus-visible {
+    outline: none;
+    border: 1px solid rgba(38, 71, 148, 1);
+}
+
+.input::placeholder {
+    font-size: 16px;
+    color: rgba(38, 71, 148, 0.3);
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.enter {
+    font-size: 16px;
+    background-color: rgba(197, 26, 26);
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 44px;
+    border: none;
+    cursor: pointer;
+}
+
+.enter:hover {
+    box-shadow: 0px 0px 14px 0px rgba(197, 26, 26, 0.6);
+}
+
+.enter:active {
+    background-color: rgba(161, 18, 18, 1);
+}
+
+.registration {
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    height: 44px;
+    border: solid 2px rgba(197, 26, 26, 1);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.registration:hover {
+    box-shadow: 0px 0px 14px 0px rgba(197, 26, 26, 0.6);
+    background-color: rgba(197, 26, 26, 1);
+}
+
+.registration:active {
+    background-color: rgba(161, 18, 18, 1);
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 252px;
+    height: 252px;
+    pointer-events: none;
+}
+
+.mark {
+    position: absolute;
+    bottom: 10px;
+    left: 155px;
+    pointer-events: none;
+}
+
+@media (max-width: 800px) {
+    .h1 {
+        margin-top: 30px;
+    }
+
+    .authorization {
+        top: -60px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .authorization {
+        padding: 10px 20px 0 10px;
+        top: -50px;
+    }
+
+    .input {
+        width: 250px;
+        height: 40px;
+
+    }
+
+    .inputIcon {
+        top: 8px;
+    }
+
+    .enter {
+        width: 250px;
+    }
+
+    .registration {
+        width: 250px;
+    }
+
+    .logo {
+        width: 201px;
+        height: 201px;
+    }
+
+    .mark {
+        left: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .input {
+        width: 230px;
+        height: 40px;
+    }
+
+    .enter {
+        width: 230px;
+    }
+
+    .registration {
+        width: 230px;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .input {
+        width: 210px;
+        height: 40px;
+    }
+
+    .enter {
+        width: 210px;
+    }
+
+    .registration {
+        width: 210px;
+    }
+
+    .authorization {
+        padding: 10px 20px 0 0px;
+        top: -50px;
+    }
+
+}

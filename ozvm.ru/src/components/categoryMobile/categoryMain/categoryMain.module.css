@@ -1,0 +1,14 @@
+.hover span {
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+.hover:active span {
+    color: rgba(197, 26, 26, 1);
+    font-weight: 900;
+}
+
+.selected span {
+    color: rgba(197, 26, 26, 1);
+    font-weight: 900;
+}

@@ -1,0 +1,14 @@
+.flexContainer {
+    display: flex;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 1)
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    background-image: url('../../../../img/bcgWelcome.svg');
+    background-size: 100%;
+    background-repeat: repeat;
+    flex-direction: column;
+}

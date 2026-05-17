@@ -1,0 +1,191 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 125px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    gap: 10px;
+    max-height: 670px;
+    position: sticky;
+    top: 30px;
+}
+
+.wrapper h1 {
+    color: rgba(38, 71, 148, 1);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.way {
+    border-radius: 10px;
+    display: flex;
+    background-color: rgba(236, 245, 255, 1);
+    padding: 4px;
+}
+
+.ways {
+    padding: 11px 51px;
+    cursor: pointer;
+}
+
+.pick {
+    padding: 11px 51px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    gap: 12px;
+}
+
+.mainFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.adress {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(38, 71, 148, 0.4);
+}
+
+.input {
+    background-color: rgba(236, 245, 255, 1);
+    padding: 13px 20px;
+    border-radius: 10px;
+    width: 111px;
+}
+
+.redInput {
+    background-color: rgba(236, 245, 255, 1);
+    padding: 13px 20px;
+    border-radius: 10px;
+    width: 111px;
+    outline: 1px solid rgb(173, 0, 0);
+    box-shadow: inset 0 0px 2px rgba(173, 0, 0, 0.3);
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.mainInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.upInputs {
+    display: flex;
+    gap: 10px;
+}
+
+.inputBig {
+    background-color: rgba(236, 245, 255, 1);
+    border-radius: 10px;
+    padding: 16px 20px 85px 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputBig:focus-visible {
+    outline: none;
+}
+
+.inputBig::placeholder {
+    font-size: 16px;
+    color: rgba(38, 71, 148, 0.4);
+}
+
+.who {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.number {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(38, 71, 148, 1);
+}
+
+.name {
+    color: rgba(4, 13, 35, 1);
+}
+
+.change {
+    color: rgba(197, 26, 26, 1);
+    cursor: pointer;
+}
+
+.writeAdress {
+    background-color: rgba(236, 245, 255, 1);
+    padding: 13px 20px 13px 45px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.writeAdressRed {
+    background-color: rgba(236, 245, 255, 1);
+    padding: 13px 20px 13px 45px;
+    border-radius: 10px;
+    width: 100%;
+    outline: 1px solid rgb(173, 0, 0);
+    box-shadow: inset 0 0px 2px rgba(173, 0, 0, 0.3);
+}
+
+.writeAdress:focus-visible {
+    outline: none;
+}
+
+.writeAdress::placeholder {
+    font-size: 16px;
+    color: rgba(38, 71, 148, 0.4);
+}
+
+.geoImg {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.position {
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 395px;
+        margin-bottom: 0;
+        position: relative;
+        top: 0;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .wrapper {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .pick {
+        width: 100%;
+        text-align: center;
+        padding: 11px 0;
+    }
+
+    .ways {
+        width: 100%;
+        text-align: center;
+        padding: 11px 0;
+    }
+
+    .input {
+        width: 100%;
+    }
+}

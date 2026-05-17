@@ -1,0 +1,23 @@
+/* Анимация плавного появления и исчезания */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0.4;
+    }
+
+    66% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Класс для анимации */
+.fadeInOut {
+    animation: fadeInOut 2.5s ease-in-out infinite;
+}

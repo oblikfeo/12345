@@ -1,0 +1,110 @@
+.selectContainer {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  padding: 10px 8px 10px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(4, 13, 35, 1);
+  background-color: white;
+  flex-shrink: 0;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.selectOptionsTrue {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 1;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selectOptionsFalse {
+  display: none;
+}
+
+.option1 {
+  line-height: 50px;
+  height: 50px;
+  padding: 0px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(4, 13, 35, 1);
+  background-color: white;
+  white-space: nowrap;
+}
+
+.option2 {
+  line-height: 50px;
+  height: 50px;
+  padding: 0px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(4, 13, 35, 1);
+  background-color: white;
+  white-space: nowrap;
+}
+
+.border {
+  border-top: 1px solid rgba(236, 245, 255, 1);
+}
+
+.hover:hover {
+  color: rgba(38, 71, 148, 1);
+  cursor: pointer;
+}
+
+.hover:active {
+  color: rgba(197, 26, 26, 1);
+}
+
+.selected {
+  color: rgba(197, 26, 26, 1);
+  font-weight: 600;
+}
+
+.icon {
+  transform: scaleY(-1);
+  flex-shrink: 0;
+}
+
+.none {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+  .select {
+    padding: 10px 6px 10px 8px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .option1 {
+    padding: 0px 8px;
+    font-size: 13px;
+  }
+
+  .option2 {
+    padding: 0px 8px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 700px) {
+  .select {
+    display: none;
+  }
+}

@@ -1,0 +1,311 @@
+.wrapperLoading {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.wrapperFinish {
+    position: relative;
+    width: 100%;
+    height: 441px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 20px;
+    overflow: hidden;
+    min-width: 1110px;
+}
+
+.girlLoading {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.arrowLoading {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    z-index: 1;
+    animation: rotation 7s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.girlFinish {
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.arrrowFinish {
+    position: absolute;
+    right: 0px;
+    bottom: 160px;
+    animation: move-right 3s infinite linear;
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(-250%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order h1 {
+    color: rgba(4, 13, 35, 1);
+    gap: 20px;
+}
+
+.list {
+    width: calc(100% - 220px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 77px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(236, 245, 255, 1);
+}
+
+.discription {
+    width: 315px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(38, 71, 148, 1);
+    text-align: end;
+}
+
+.prices h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(38, 71, 148, 0.4);
+    text-align: end;
+}
+
+.prices h4 {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(38, 71, 148, 0.4);
+    text-decoration: line-through;
+    text-align: end;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.summ {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 220px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(38, 71, 148, 0.4);
+}
+
+.allPrice {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(38, 71, 148, 1);
+}
+
+.repeat {
+    height: 44px;
+    width: 244px;
+    background-color: rgba(197, 26, 26, 1);
+    border-radius: 10px;
+    color: white;
+}
+
+.repeat2 {
+    display: none;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dotes {
+    height: 1px;
+    width: 100%;
+    border-bottom: dotted 2px rgba(38, 71, 148, 0.4);
+    padding-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.left h1 {
+    white-space: nowrap;
+}
+
+.revert {
+    transform: scaleY(-1);
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.svg {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+@media (max-width: 750px) {
+    .repeat {
+        display: none;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .summ {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .repeat2 {
+        display: block;
+        height: 44px;
+        width: 100%;
+        background-color: rgba(197, 26, 26, 1);
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+@media (max-width: 550px) {
+    .item {
+        gap: 20px;
+    }
+
+    .prices {
+        white-space: nowrap;
+    }
+
+    .discription {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .item {
+        gap: 10px;
+    }
+
+    .discription {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .prices h2 {
+        font-size: 12px;
+    }
+
+    .prices h3 {
+        font-size: 10px;
+    }
+
+    .prices h4 {
+        font-size: 8px;
+    }
+
+    .left h1 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .item {
+        gap: 10px;
+    }
+
+    .discription {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .prices h2 {
+        font-size: 11px;
+    }
+
+    .prices h3 {
+        font-size: 9px;
+    }
+
+    .prices h4 {
+        font-size: 7px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .allPrice {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapperLoading {
+        padding: 10px;
+    }
+}

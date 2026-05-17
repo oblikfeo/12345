@@ -1,0 +1,452 @@
+.wrapper {
+    width: 100%;
+    padding: 0 60px;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.product {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.content {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 30px;
+}
+
+.shadow {
+    box-shadow: 0px 0px 50px 0px rgba(4, 13, 35, 0.08);
+    border-radius: 10px;
+    width: 322px;
+    height: 322px;
+    object-fit: contain;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    height: 91px;
+    border-bottom: 1px solid rgba(236, 245, 255, 1);
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(38, 71, 148, 1);
+}
+
+.name div {
+    max-width: 550px;
+}
+
+.have {
+    text-align: center;
+    min-width: 101px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(114, 194, 247, 1);
+    text-align: center;
+    margin-top: 8px;
+}
+
+.havent {
+    min-width: 101px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(197, 26, 26, 1);
+    text-align: center;
+    margin-top: 8px;
+}
+
+.description {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.right {
+
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 224px;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph h2 {
+    color: rgba(38, 71, 148, 1);
+    white-space: nowrap;
+}
+
+.paragraph h3 {
+    color: rgba(4, 13, 35, 1);
+    white-space: nowrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.border {
+    width: 100%;
+    padding: 12px 10px 0px 12px;
+}
+
+.borderItem {
+    padding-top: 6px;
+    width: 100%;
+    border-bottom: 1px dashed rgba(38, 71, 148, 0.4);
+}
+
+.counter {
+    display: flex;
+    background-color: rgba(236, 245, 255, 1);
+    border-radius: 6px;
+    min-width: 126px;
+    justify-content: center;
+    height: 34px;
+    padding: 0 10px;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.button {
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+}
+
+.h4 {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(38, 71, 148, 0.4);
+    white-space: nowrap;
+}
+
+.buttonArea {
+    height: 44px;
+    width: 100%;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(197, 26, 26, 1);
+    border-radius: 10px;
+    border: none;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    cursor: pointer;
+}
+
+.flex span {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(197, 26, 26, 1);
+}
+
+.transform {
+    transform: scaleY(-1)
+}
+
+.h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(38, 71, 148, 1);
+    margin-left: 60px;
+}
+
+.footer {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.redline {
+    border-right: 1px solid rgba(197, 26, 26, 1);
+    padding-right: 10px;
+}
+
+.footerText {
+    padding-left: 10px;
+}
+
+.minicatalog {
+    margin-top: 80px;
+}
+
+.superButton {
+    border-radius: 50%;
+    border: 1px solid rgba(38, 71, 148, 1);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ECF5FF;
+    border-radius: 4px;
+    padding: 4px;
+    width: fit-content;
+}
+
+.quantityButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.2s ease;
+}
+
+.quantityButton:hover {
+    background-color: rgba(38, 71, 148, 0.1);
+}
+
+.quantityInput {
+    width: 48px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #264794;
+    border-radius: 4px;
+    background: white;
+    font-size: 16px;
+    color: #264794;
+    -moz-appearance: textfield;
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media (max-width: 1700px) {
+    .description {
+        flex-direction: column;
+    }
+
+    .right {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1500px) {
+    .product {
+        padding: 20px;
+    }
+
+    .wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .product {
+        padding: 20px;
+    }
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    .shadow {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .description {
+        flex-direction: row;
+    }
+
+    .number {
+        text-align: center;
+        line-height: 1;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .shadow {
+        width: 200px;
+        height: 200px;
+    }
+
+    .head {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .shadow {
+        width: 150px;
+        height: 150px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .content {
+        gap: 15px;
+    }
+
+    .description {
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .shadow {
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding: 0 8px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shadow {
+        width: auto;
+        height: 354px;
+        object-fit: contain;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .right {
+        margin: 0;
+        width: 100%;
+    }
+
+    .calc {
+        width: 225px;
+        margin-left: auto;
+    }
+
+    .description {
+        gap: 0;
+    }
+
+    .flex {
+        margin-top: 20px;
+    }
+
+    .minicatalog {
+        margin-top: 20px;
+    }
+
+    .quantityControls {
+        padding: 2px;
+    }
+
+    .quantityButton {
+        width: 28px;
+        height: 28px;
+    }
+
+    .quantityInput {
+        width: 40px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    .name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quantityControls {
+        padding: 2px;
+    }
+
+    .quantityButton {
+        width: 28px;
+        height: 28px;
+    }
+
+    .quantityInput {
+        width: 40px;
+        height: 28px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,49 @@
+.flexContainer {
+    display: flex;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 1);
+
+}
+
+/* Скрытие блока категорий на странице личного кабинета */
+.flexContainer .categoryWrapper {
+    display: none !important;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-image: url('../../../img/pawsBCG.svg');
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 20px 60px 0 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+    bottom: 10px;
+    z-index: 5;
+}
+
+.redline {
+    border-right: 1px solid rgba(197, 26, 26, 1);
+    padding-right: 10px;
+}
+
+.footerText {
+    padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    .flexContainer {
+        min-height: 100vh;
+    }
+}

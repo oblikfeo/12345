@@ -1,0 +1,96 @@
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middleText {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(4, 13, 35, 1);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    outline: none;
+}
+
+.middleText:hover {
+    color: rgba(197, 26, 26, 1);
+}
+
+.middleText:focus {
+    outline: none;
+}
+
+.middleText:active {
+    outline: none;
+}
+
+.middleText.selected {
+    color: rgba(197, 26, 26, 1);
+}
+
+.arrowButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.arrowButton:hover {
+    box-shadow: inset 1px 1px 5px rgba(50, 50, 50, 0.2);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.lowText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(4, 13, 35, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.categoryLowTrue {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.categoryLowFalse {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.hover {
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+
+.hover:hover {
+    background-color: rgba(197, 26, 26, 1);
+    border-radius: 100px;
+    color: white;
+}
+
+.icon {
+    transform: scaleY(-1);
+    transition: transform 0.2s ease;
+}
+
+.iconClosed {
+    transform: scaleY(1);
+    transition: transform 0.2s ease;
+}
